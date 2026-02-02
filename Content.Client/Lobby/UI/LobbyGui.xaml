@@ -1,83 +1,115 @@
 <lobbyUi:LobbyGui
     xmlns="https://spacestation14.io"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:maths="clr-namespace:Robust.Shared.Maths;assembly=Robust.Shared.Maths"
-    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
-    xmlns:vote="clr-namespace:Content.Client.Voting.UI"
-    xmlns:lobbyUi="clr-namespace:Content.Client.Lobby.UI"
-    xmlns:info="clr-namespace:Content.Client.Info"
-    xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-    xmlns:changelog="clr-namespace:Content.Client.Changelog">
+    xmlns:info="clr-namespace:Content.Client.Info"
+    xmlns:vote="clr-namespace:Content.Client.Voting.UI"
+    xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets"
+    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    xmlns:changelog="clr-namespace:Content.Client.Changelog"
+    xmlns:lobbyUi="clr-namespace:Content.Client.Lobby.UI">
 
-    <TextureRect Access="Public" Name="Background" VerticalExpand="True" HorizontalExpand="True" Stretch="KeepAspectCovered"/>
-
-    <BoxContainer Name="MainContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Vertical">
+    <LayoutContainer Name="RootContainer" HorizontalExpand="True" VerticalExpand="True">
         
-        <controls:StripeBack Name="TopSide" VerticalExpand="False">
-            <PanelContainer StyleClasses="LobbyBackground" MinHeight="50">
-                <BoxContainer Orientation="Horizontal" Margin="10 0" HorizontalExpand="True">
-                    
-                    <BoxContainer Orientation="Horizontal" SeparationOverride="4" HorizontalExpand="True" SizeFlagsStretchRatio="1">
-                        <Button Name="Rules" Text="{Loc 'server-info-rules-button'}" />
-                        <Button Name="Guidebook" Text="{Loc 'server-info-guidebook-button'}" />
-                        <changelog:ChangelogButton Name="Changelog" />
-                        <vote:VoteCallMenuButton Name="CallVoteButton" />
-                    </BoxContainer>
+        <TextureRect Name="Background" Access="Public" 
+                     HorizontalExpand="True" VerticalExpand="True"
+                     Stretch="KeepAspectCovered"
+                     MouseFilter="Ignore" />
 
-                    <BoxContainer HorizontalExpand="True" SizeFlagsStretchRatio="1" HorizontalAlignment="Center">
-                         <TextureRect TextureScale="0.18 0.18" Stretch="KeepCentered" TexturePath="/Textures/Logo/splashlogo.png" />
-                    </BoxContainer>
-
-                    <BoxContainer Orientation="Horizontal" SeparationOverride="4" HorizontalExpand="True" SizeFlagsStretchRatio="1" HorizontalAlignment="Right">
-                        <Button Name="Discord" Text="Discord" />
-                        <Button Name="OptionsButton" Access="Public" Text="{Loc 'ui-lobby-options-button'}" />
-                        <Button Name="AHelpButton" Access="Public" Text="{Loc 'ui-lobby-ahelp-button'}" />
-                        <Button Name="LeaveButton" Access="Public" Text="{Loc 'ui-lobby-leave-button'}" StyleIdentifier="Red" MinWidth="100" />
-                    </BoxContainer>
-                </BoxContainer>
-            </PanelContainer>
-        </controls:StripeBack>
-
-        <BoxContainer Name="DefaultState" Access="Public" Orientation="Horizontal" VerticalExpand="True" Margin="10" SeparationOverride="10">
+        <BoxContainer Name="MainContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
             
-            <PanelContainer StyleClasses="LobbyBackground" MinWidth="350" HorizontalExpand="True" SizeFlagsStretchRatio="0.7">
-                <BoxContainer Orientation="Vertical" Margin="10">
-                    <Label Name="ServerName" Access="Public" StyleClasses="LabelHeadingBigger" Margin="0 0 0 10"/>
-                    <info:ServerInfo Name="ServerInfo" Access="Public" VerticalExpand="False" />
-                    <Label Name="StationTime" Access="Public" FontColorOverride="LightGray" HorizontalAlignment="Center" />
-                    <controls:HLine Color="#404040" Thickness="1" Margin="0 5"/>
-                    
-                    <BoxContainer Orientation="Vertical" Name="VoteContainer" Access="Public" VerticalExpand="True" />
+            <controls:StripeBack Name="TopSide" VerticalExpand="False">
+                <PanelContainer StyleClasses="LobbyBackground" MinHeight="80"> 
+                    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="20 0" SeparationOverride="15">
+                        
+                        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True" VerticalAlignment="Center">
+                            <Button Name="RulesButton" Text="Правила" StyleClasses="NovaLobbyButton" MinWidth="110" MinHeight="35" />
+                            <Button Name="GuidebookButton" Text="Гайд" StyleClasses="NovaLobbyButton" MinWidth="110" MinHeight="35" />
+                            <Button Name="CreditsButton" Text="Авторы" StyleClasses="NovaLobbyButton" MinWidth="110" MinHeight="35" />
+                        </BoxContainer>
+
+                        <BoxContainer HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="300">
+                            <TextureRect Name="Logo" TextureScale="0.3 0.3" Stretch="KeepCentered" 
+                                         TexturePath="/Textures/Logo/splashlogo.png" MinSize="250 70"/>
+                        </BoxContainer>
+
+                        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True" HorizontalAlignment="Right" VerticalAlignment="Center">
+                            <Button Name="OptionsButton" Access="Public" Text="{Loc 'ui-lobby-options-button'}" StyleClasses="NovaLobbyButton" MinWidth="110" MinHeight="35" />
+                            <Button Name="AHelpButton" Access="Public" Text="{Loc 'ui-lobby-ahelp-button'}" StyleClasses="NovaLobbyButton" MinWidth="110" MinHeight="35" />
+                            <Button Name="LeaveButton" Access="Public" Text="{Loc 'ui-lobby-leave-button'}" StyleClasses="NovaLobbyButton" StyleIdentifier="Red" MinWidth="110" MinHeight="35" />
+                        </BoxContainer>
+                        
+                    </BoxContainer>
+                </PanelContainer>
+            </controls:StripeBack>
+
+            <BoxContainer Name="DefaultState" Access="Public" Orientation="Horizontal" VerticalExpand="True" Margin="20" SeparationOverride="20">
+                
+                <BoxContainer Orientation="Vertical" MinWidth="400" HorizontalExpand="False">
+                    <PanelContainer StyleClasses="LobbyBackground" VerticalExpand="True">
+                        <BoxContainer Orientation="Vertical" Margin="15">
+                            <Label Name="ServerName" Access="Public" StyleClasses="LabelHeadingBigger" HorizontalAlignment="Center" />
+                            
+                            <PanelContainer StyleClasses="ServerInfoBackground" Margin="0 5" VerticalExpand="False">
+                                <BoxContainer Orientation="Vertical" Margin="10">
+                                    <info:ServerInfo Name="ServerInfo" Access="Public" VerticalExpand="False" />
+                                    <Label Name="StationTime" Access="Public" FontColorOverride="Cyan" HorizontalAlignment="Center" />
+                                </BoxContainer>
+                            </PanelContainer>
+
+                            <controls:HLine Color="#606060" Margin="0 5"/>
+                            <Label Text="ГОЛОСОВАНИЯ" StyleClasses="LabelHeading" HorizontalAlignment="Center" />
+                            
+                            <ScrollContainer VerticalExpand="True" Margin="0 10">
+                                <BoxContainer Name="VoteContainer" Access="Public" Orientation="Vertical" SeparationOverride="4" />
+                            </ScrollContainer>
+                            
+                            <vote:VoteCallMenuButton Name="CallVoteButton" StyleClasses="NovaLobbyButton" Text="Голосование" HorizontalExpand="True" />
+                        </BoxContainer>
+                    </PanelContainer>
                 </BoxContainer>
-            </PanelContainer>
 
-            <PanelContainer StyleClasses="LobbyBackground" HorizontalExpand="True" SizeFlagsStretchRatio="1.5">
-                <BoxContainer Orientation="Vertical" Margin="10">
-                    <controls:StripeBack Name="StripeBack" Margin="0 0 0 10">
-                        <Label Name="StartTime" Access="Public" Align="Center" StyleClasses="LabelBig" FontColorOverride="Gold" HorizontalExpand="True" />
-                    </controls:StripeBack>
-                    
-                    <lobbyUi:LobbyCharacterPreviewPanel Name="CharacterPreview" Access="Public" VerticalExpand="True" HorizontalExpand="True" Margin="0 20" />
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                     <BoxContainer Orientation="Vertical" VerticalExpand="True">
+                        <controls:StripeBack Margin="0 0 0 10">
+                            <Label Name="StartTime" Access="Public" Align="Center" StyleClasses="LabelBig" FontColorOverride="Gold" HorizontalExpand="True" />
+                        </controls:StripeBack>
+                        
+                        <lobbyUi:LobbyCharacterPreviewPanel Name="CharacterPreview" Access="Public" VerticalExpand="True" HorizontalExpand="True" />
+                        
+                        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="20" Margin="0 5">
+                            <RichTextLabel Name="LobbySong" Access="Public" />
+                            <RichTextLabel Name="LobbyBackground" Access="Public" />
+                        </BoxContainer>
 
-                    <BoxContainer Orientation="Vertical" SeparationOverride="8">
-                        <Button Name="ReadyButton" Access="Public" ToggleMode="True" Text="{Loc 'ui-lobby-ready-up-button'}" StyleClasses="ButtonBig" MinHeight="70"/>
-                        <BoxContainer Orientation="Horizontal" SeparationOverride="8">
-                            <Button Name="CharacterSetupButton" Access="Public" Text="Персонализация" HorizontalExpand="True" MinHeight="45"/>
-                            <cc:UICommandButton Command="observe" Name="ObserveButton" Access="Public" Text="В Госты" HorizontalExpand="True" WindowType="{x:Type lobbyUi:ObserveWarningWindow}" />
-                            <Button Name="ManifestButton" Access="Public" Text="Манифест" HorizontalExpand="True" />
+                        <BoxContainer Orientation="Vertical" SeparationOverride="10" Margin="0 10">
+                            <Button Name="ReadyButton" Access="Public" ToggleMode="True" Text="{Loc 'ui-lobby-ready-up-button'}" StyleClasses="NovaLobbyButton ButtonBig" MinHeight="70"/>
+                            <GridContainer Columns="3" HorizontalExpand="True">
+                                <Button Name="CharacterSetupButton" Access="Public" Text="Персонаж" StyleClasses="NovaLobbyButton" HorizontalExpand="True" MinHeight="45"/>
+                                <cc:UICommandButton Command="observe" Name="ObserveButton" Access="Public" Text="Наблюдать" StyleClasses="NovaLobbyButton" HorizontalExpand="True" WindowType="{x:Type lobbyUi:ObserveWarningWindow}" />
+                                <Button Name="ManifestButton" Access="Public" Text="Манифест" StyleClasses="NovaLobbyButton" HorizontalExpand="True" />
+                            </GridContainer>
                         </BoxContainer>
                     </BoxContainer>
                 </BoxContainer>
-            </PanelContainer>
 
-            <PanelContainer StyleClasses="LobbyBackground" MinWidth="350" HorizontalExpand="True" SizeFlagsStretchRatio="0.8">
-                <BoxContainer Orientation="Vertical" Margin="5">
-                    <widgets:ChatBox Name="Chat" Access="Public" VerticalExpand="True" />
+                <BoxContainer Orientation="Vertical" MinWidth="400" HorizontalExpand="False">
+                    <PanelContainer StyleClasses="LobbyBackground" VerticalExpand="True">
+                        <BoxContainer Orientation="Vertical" Margin="10">
+                            <BoxContainer Orientation="Horizontal" Margin="0 0 0 5">
+                                <Label Text="ЧАТ" StyleClasses="LabelHeading" VAlign="Center" />
+                                <Control HorizontalExpand="True" />
+                                <changelog:ChangelogButton Name="Changelog" Access="Public" StyleClasses="NovaLobbyButton" Text="Обновления" />
+                            </BoxContainer>
+                            <widgets:ChatBox Name="Chat" Access="Public" VerticalExpand="True" />
+                        </BoxContainer>
+                    </PanelContainer>
                 </BoxContainer>
-            </PanelContainer>
-        </BoxContainer>
 
-        <Control Access="Public" Visible="False" Name="CharacterSetupState" VerticalExpand="True" HorizontalExpand="True" />
-    </BoxContainer>
+            </BoxContainer>
+
+            <Control Name="CharacterSetupState" Access="Public" Visible="False" VerticalExpand="True" HorizontalExpand="True" />
+
+        </BoxContainer>
+    </LayoutContainer>
 </lobbyUi:LobbyGui>

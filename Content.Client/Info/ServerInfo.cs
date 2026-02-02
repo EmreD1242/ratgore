@@ -22,11 +22,12 @@ namespace Content.Client.Info
             };
             AddChild(_richTextLabel);
         }
+
         public void SetInfoBlob(string markup)
         {
-            var message = FormattedMessage.FromMarkup("[font=\"Bedstead\" size=12][color=#2f2f2f]" + markup + "[/color][/font]"); // WWDP EDIT
+            // ratgore - white text
+            var message = FormattedMessage.FromMarkup("[font=\"Bedstead\" size=12][color=#d3d3d3]" + markup + "[/color][/font]");
             _richTextLabel.SetMessage(message);
-
         }
     }
 }
