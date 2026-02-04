@@ -15,10 +15,10 @@
 - type: spaceBiome
   id: RatGraveyardWrecks
   priority: 9000
-  minX: 40
-  maxX: 52
-  minY: -30
-  maxY: -18
+  minX: 39
+  maxX: 53
+  minY: -29
+  maxY: -19
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -94,10 +94,10 @@
 - type: spaceBiome
   id: RatBalreskaWrecks
   priority: 9000
-  minX: -35
-  maxX: -25
-  minY: -45
-  maxY: -35
+  minX: -34
+  maxX: -26
+  minY: -44
+  maxY: -36
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -173,9 +173,9 @@
 - type: spaceBiome
   id: RatAncientBattlefieldWrecks
   priority: 9000
-  minX: 17
+  minX: 18
   maxX: 21
-  minY: 20
+  minY: 21
   maxY: 26
   noiseRanges: {}
   chunkComponents:
@@ -246,10 +246,10 @@
 - type: spaceBiome
   id: RatHeartlandsWrecks
   priority: 9000
-  minX: -33
-  maxX: -23
-  minY: -15
-  maxY: -5
+  minX: -32
+  maxX: -24
+  minY: -14
+  maxY: -6
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -321,59 +321,37 @@
 - type: spaceBiome
   id: RatAsteroidsStandardTaypanOne
   priority: 9000
-  minX: -12
-  maxX: -2
-  minY: -25
-  maxY: -15
+  minX: -11
+  maxX: -5
+  minY: -26
+  maxY: -20
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
     densityNoiseChannel: Density
   - type: SimpleDebrisSelector
     debrisTable:
-    - id: AsteroidDebrisNFIceMedium
-      prob: 0.1
-    - id: AsteroidDebrisNFLarge
-      prob: 0.2
-    - id: AsteroidDebrisNFChromiteLarge
-      prob: 0.1
-    - id: AsteroidRockDebrisNFLarger
-      prob: 0.1
-    - id: AsteroidRockDebrisNFHuge
-      prob: 0.2
-    - id: AsteroidDebrisNFLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFIceLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFHuge
+    - id: RatAsteroidPoorLarge
+      prob: 0.25
+    - id: RatAsteroidPoorHuge
       prob: 0.15
-    - id: AsteroidDebrisNFIceHuge
-      prob: 0.15
-    - id: AsteroidSalvageNFSmall
+    - id: RatIceAsteroidPoorLarge
+      prob: 0.2
+    - id: RatIceAsteroidPoorHuge
       prob: 0.1
-    - id: AsteroidSalvageNFIceSmall
+    - id: RatBasaltAsteroidPoorLarge
+      prob: 0.2
+    - id: RatBasaltAsteroidPoorHuge
       prob: 0.1
-    - id: AsteroidSalvageNFMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFChromiteMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFIceLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFHuge
-      prob: 0.03
-    - id: AsteroidSalvageNFIceHuge
-      prob: 0.03
     - id: ExhumerGag
       prob: 0.01
 
 - type: spaceBiome
   id: RatAsteroidsStandardTaypanTwo
   priority: 9000
-  minX: -20
-  maxX: -10
-  minY: 15
+  minX: -18
+  maxX: -12
+  minY: 19
   maxY: 25
   noiseRanges: {}
   chunkComponents:
@@ -381,147 +359,45 @@
     densityNoiseChannel: Density
   - type: SimpleDebrisSelector
     debrisTable:
-    - id: AsteroidDebrisNFIceMedium
-      prob: 0.1
-    - id: AsteroidDebrisNFLarge
-      prob: 0.2
-    - id: AsteroidDebrisNFChromiteLarge
-      prob: 0.1
-    - id: AsteroidRockDebrisNFLarger
-      prob: 0.1
-    - id: AsteroidRockDebrisNFHuge
-      prob: 0.2
-    - id: AsteroidDebrisNFLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFIceLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFHuge
+    - id: RatAsteroidPoorLarge
+      prob: 0.25
+    - id: RatAsteroidPoorHuge
       prob: 0.15
-    - id: AsteroidDebrisNFIceHuge
-      prob: 0.15
-    - id: AsteroidSalvageNFSmall
+    - id: RatIceAsteroidPoorLarge
+      prob: 0.2
+    - id: RatIceAsteroidPoorHuge
       prob: 0.1
-    - id: AsteroidSalvageNFIceSmall
+    - id: RatBasaltAsteroidPoorLarge
+      prob: 0.2
+    - id: RatBasaltAsteroidPoorHuge
       prob: 0.1
-    - id: AsteroidSalvageNFMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFChromiteMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFIceLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFHuge
-      prob: 0.03
-    - id: AsteroidSalvageNFIceHuge
-      prob: 0.03
     - id: ExhumerGag
       prob: 0.01
 
 - type: spaceBiome
   id: RatCraster
   priority: 9000
-  minX: 12
-  maxX: 19
-  minY: -15
-  maxY: -8
+  minX: 19
+  maxX: 26
+  minY: -9
+  maxY: 0
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
     densityNoiseChannel: Density
   - type: SimpleDebrisSelector
     debrisTable:
-    - id: AsteroidDebrisNFChromiteLarge
-      prob: 0.6
-    - id: AsteroidDebrisNFChromiteLarger
+    - id: RatAsteroidRichLarge
       prob: 0.3
-    - id: AsteroidDebrisNFChromiteHuge
-      prob: 0.15
-    - id: AsteroidSalvageNFChromiteSmall
-      prob: 0.1
-    - id: AsteroidSalvageNFChromiteMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFChromiteLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFChromiteHuge
-      prob: 0.03
-    - id: ExhumerGag
-      prob: 0.01
-
-- type: spaceBiome
-  id: RatMarchbelt
-  priority: 9000
-  minX: -62
-  maxX: -56
-  minY: 46
-  maxY: 52
-  noiseRanges: {}
-  chunkComponents:
-  - type: DebrisFeaturePlacerController
-    densityNoiseChannel: Density
-  - type: SimpleDebrisSelector
-    debrisTable:
-    - id: AsteroidDebrisNFIceMedium
-      prob: 0.5
-    - id: AsteroidSalvageNFSmall
-      prob: 0.5
-    - id: AsteroidSalvageNFIceSmall
-      prob: 0.5
-    - id: AsteroidSalvageNFMedium
-      prob: 0.5
-    - id: AsteroidSalvageNFHuge
-      prob: 0.03
-    - id: AsteroidSalvageNFIceHuge
-      prob: 0.03
-    - id: ExhumerGag
-      prob: 0.01
-
-- type: spaceBiome
-  id: RatDeepbelt
-  priority: 9000
-  minX: -20
-  maxX: -10
-  minY: -7
-  maxY: -1
-  noiseRanges: {}
-  chunkComponents:
-  - type: DebrisFeaturePlacerController
-    densityNoiseChannel: Density
-  - type: SimpleDebrisSelector
-    debrisTable:
-    - id: AsteroidDebrisNFIceMedium
-      prob: 0.1
-    - id: AsteroidDebrisNFLarge
+    - id: RatAsteroidRichHuge
       prob: 0.2
-    - id: AsteroidDebrisNFChromiteLarge
-      prob: 0.1
-    - id: AsteroidRockDebrisNFLarger
-      prob: 0.1
-    - id: AsteroidRockDebrisNFHuge
-      prob: 0.2
-    - id: AsteroidDebrisNFLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFIceLarger
-      prob: 0.3
-    - id: AsteroidDebrisNFChromiteHuge
+    - id: RatIceAsteroidRichLarge
       prob: 0.15
-    - id: AsteroidSalvageNFChromiteSmall
+    - id: RatIceAsteroidRichHuge
       prob: 0.1
-    - id: AsteroidSalvageNFChromiteMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFIceSmall
+    - id: RatBasaltAsteroidRichLarge
+      prob: 0.15
+    - id: RatBasaltAsteroidRichHuge
       prob: 0.1
-    - id: AsteroidSalvageNFMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFChromiteMedium
-      prob: 0.08
-    - id: AsteroidSalvageNFLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFIceLarge
-      prob: 0.05
-    - id: AsteroidSalvageNFHuge
-      prob: 0.03
-    - id: AsteroidSalvageNFIceHuge
-      prob: 0.03
     - id: ExhumerGag
       prob: 0.01
