@@ -410,6 +410,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
         DrawBacking(handle);
         DrawCircles(handle);
+        DrawZoneCircles(handle); // Corvax-Frontier-Zones
 
         // No data
         if (_coordinates == null || _rotation == null)
@@ -814,6 +815,26 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         }
     }
 
+    // Rat-start
+    private void DrawZoneCircles(DrawingHandleScreen handle)
+    {
+        if (_coordinates == null)
+            return;
+
+        var worldCenter = new MapCoordinates(Vector2.Zero, _transform.ToMapCoordinates(_coordinates.Value).MapId);
+        var currentPos = _transform.ToMapCoordinates(_coordinates.Value);
+
+        var offsetFromCenter = worldCenter.Position - currentPos.Position;
+
+        var radarCenterPos = MidPointVector + offsetFromCenter * MinimapScale;
+        radarCenterPos.Y = Height - radarCenterPos.Y;
+
+        handle.DrawCircle(radarCenterPos, 650 * MinimapScale, new Color(255, 0, 0, 50), false);
+
+        handle.DrawCircle(radarCenterPos, 3950 * MinimapScale, new Color(0, 255, 0, 50), false);
+        handle.DrawCircle(radarCenterPos, 4350 * MinimapScale, new Color(0, 255, 0, 50), false);
+    }
+    // Rat-end
 
     private Vector2 InverseScalePosition(Vector2 value)
     {
