@@ -8,15 +8,15 @@
     Древний и широко используемый дизайн. ГПИ Экскаватор — это корвет начального уровня для добычи, оснащённый основным спасательным оборудованием и горнодобывающими импульсными установками для автоматической добычи.  
     СНАРЯЖЕНИЕ: 2x SHI 250c "Экскаватор" кинетические импульсные установки  
     МИНИМАЛЬНЫЙ ЭКИПАЖ: 1 пилот  
-  price: 50000
+  price: 40000
   category: Small
   group: Civilian
-  path: /Maps/_Crescent/Shuttles/Civilian/exhumer.yml
+  path: /Maps/_Rat/Shuttles/Civilian/exhumer.yml
 
 - type: gameMap
   id: Exhumer
   mapName: 'ГПИ Эксатор'
-  mapPath: /Maps/_Crescent/Shuttles/Civilian/exhumer.yml
+  mapPath: /Maps/_Rat/Shuttles/Civilian/exhumer.yml
   minPlayers: 0
   stations:
     Exhumer:

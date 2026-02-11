@@ -39,7 +39,6 @@
   - type: Eye
   - type: ContentEye
   - type: CameraRecoil
-  - type: Telescope
   - type: MindContainer
   - type: MovementSpeedModifier
   - type: Polymorphable

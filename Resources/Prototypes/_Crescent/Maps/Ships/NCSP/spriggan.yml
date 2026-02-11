@@ -6,17 +6,15 @@
   name: ТК Сприган
   description: |
     Результат экспериментов инженера ПК с тюнингом, "Сприган" — это мобильный контрабандистско-спасательный корабль, дешевый и легко модифицируемый во что угодно.
-    ВООРУЖЕНИЕ: 2x Добывающие орудия "Экскаватор"
-    МИНИМАЛЬНЫЙ ЭКИПАЖ: 1x Пилот
-  price: 38000
+  price: 40000
   category: Small
   group: None
-  path: /Maps/_Crescent/Shuttles/NCSP/spriggan.yml
+  path: /Maps/_Rat/Shuttles/NCSP/spriggan.yml
 
 - type: gameMap
   id: Spriggan
   mapName: 'ТК Сприган'
-  mapPath: /Maps/_Crescent/Shuttles/NCSP/spriggan.yml
+  mapPath: /Maps/_Rat/Shuttles/NCSP/spriggan.yml
   minPlayers: 0
   stations:
     Spriggan:

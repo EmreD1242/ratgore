@@ -46,14 +46,14 @@ public sealed partial class CCVars
     ///     Whether monstermos tile equalization is enabled.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosEqualization =
-        CVarDef.Create("atmos.monstermos_equalization", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_equalization", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos explosive depressurization is enabled.
     ///     Needs <see cref="MonstermosEqualization"/> to be enabled to work.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosDepressurization =
-        CVarDef.Create("atmos.monstermos_depressurization", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_depressurization", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos explosive depressurization will rip tiles..
@@ -126,13 +126,13 @@ public sealed partial class CCVars
     ///     Maximum time in milliseconds that atmos can take processing.
     /// </summary>
     public static readonly CVarDef<float> AtmosMaxProcessTime =
-        CVarDef.Create("atmos.max_process_time", 6f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.max_process_time", 4f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Atmos tickrate in TPS. Atmos processing will happen every 1/TPS seconds.
     /// </summary>
     public static readonly CVarDef<float> AtmosTickRate =
-        CVarDef.Create("atmos.tickrate", 15f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.tickrate", 10f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Scale factor for how fast things happen in our atmosphere
@@ -141,7 +141,7 @@ public sealed partial class CCVars
     ///     in-game.
     /// </summary>
     public static readonly CVarDef<float> AtmosSpeedup =
-        CVarDef.Create("atmos.speedup", 8f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.speedup", 4f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Like atmos.speedup, but only for gas and reaction heat values. 64x means
@@ -161,7 +161,7 @@ public sealed partial class CCVars
     ///     Whether or not Space Wind is allowed to attempt to knock down player characters.
     /// </summary>
     public static readonly CVarDef<bool> SpaceWindAllowKnockdown =
-        CVarDef.Create("atmos.space_wind_allow_knockdown", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_allow_knockdown", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether or not Space Wind will create subtle visual indicators for the presence of air currents.

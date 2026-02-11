@@ -17,13 +17,13 @@ namespace Content.Shared._Rat.CCVar
         /// Интервал в секундах между очистками мусора.
         /// </summary>
         public static readonly CVarDef<float> TrashCleanupInterval =
-            CVarDef.Create("trash.cleanup_interval", 600f, CVar.SERVERONLY);
+            CVarDef.Create("trash.cleanup_interval", 60f, CVar.SERVERONLY);
 
         /// <summary>
         /// Задержка в секундах после начала раунда перед активацией очистки мусора.
         /// </summary>
         public static readonly CVarDef<float> TrashCleanupStartDelay =
-            CVarDef.Create("trash.cleanup_start_delay", 600f, CVar.SERVERONLY);
+            CVarDef.Create("trash.cleanup_start_delay", 60f, CVar.SERVERONLY);
 
         /// <summary>
         /// Включение/отключение автоматического удаления мелких гридов.

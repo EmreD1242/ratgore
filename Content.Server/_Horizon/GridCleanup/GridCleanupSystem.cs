@@ -33,7 +33,7 @@ public sealed class GridCleanupSystem : EntitySystem
     private const int MinimumTiles = 10;
 
     // The delay before cleaning up a small grid (in seconds)
-    private const float CleanupDelay = 600f;
+    private const float CleanupDelay = 60f;
 
     // Interval for rechecking grids that were skipped due to players (in seconds)
     private const float RecheckInterval = 60f;

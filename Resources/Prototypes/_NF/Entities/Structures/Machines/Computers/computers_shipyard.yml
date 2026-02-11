@@ -81,8 +81,8 @@
   - type: ShipyardListing
     shuttles:
     - Exhumer
+    - Baniu
     - Homesteader
-    - Hammerhead
     - Comet
     - Kite
     - Mercury
