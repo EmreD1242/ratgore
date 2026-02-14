@@ -58,7 +58,7 @@ public sealed class MagnetPickupSystem : EntitySystem
                     continue;
             }
 
-            // No space
+            // Базовая проверка наличия места
             if (!_storage.HasSpace((uid, storage)))
                 continue;
 
