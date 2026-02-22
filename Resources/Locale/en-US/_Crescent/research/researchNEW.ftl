@@ -115,6 +115,7 @@ research-technology-imperial-craftcomps = Imperial Weapon Components
 
 # NCWL
 research-technology-communard-clothes = Communard Clothes
+research-technology-armored-communard-clothes = Communared Armored Clothes
 research-technology-communard-infantry = Communard Infantry Equipment
 research-technology-communard-riotgear = Communard Riot Gear
 research-technology-communard-fighters = Communard Ultralight Fighters

@@ -183,6 +183,11 @@
   - type: Appearance
   - type: StaticPrice
     price: 2000
+  - type: ReverseEngineering # SectorCrescent
+    difficulty: 2
+    recipes:
+      - WeaponSniperMolot
+      - WeaponSniperNCWLNovomosin
 
 - type: entity
   name: NCSP AK-60 15.2x169mm

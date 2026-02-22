@@ -49,6 +49,12 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ReverseEngineering
+    difficulty: 2
+    recipes:
+      - WeaponSubMachineGunMilitant
+      - WeaponSubMachineGunBloodhound
+      - WeaponSubMachineGunNCWLWatchdog
 
 - type: entity
   name: NCWL DS1 Watchdog 9x19mm
@@ -76,6 +82,9 @@
   - type: Appearance
   - type: StaticPrice
     price: 600
+  - type: ReverseEngineering
+    recipes:
+      - WeaponSubMachineGunNCWLWatchdog
 
 - type: entity
   name: NCWL Partisan 9x19mm
@@ -177,6 +186,12 @@
       steps: 1
       zeroVisible: true
     - type: Appearance
+    - type: ReverseEngineering
+      difficulty: 2
+      recipes:
+        - WeaponSubMachineGunBloodhound
+        - WeaponSubMachineGunMilitant
+        - WeaponSubMachineGunNCWLWatchdog
 
 #DSM
 - type: entity

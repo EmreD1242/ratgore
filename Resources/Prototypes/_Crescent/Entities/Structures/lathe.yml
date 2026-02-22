@@ -671,6 +671,7 @@
       - JanissaryLPC
       - VorunaLPC
       - PerigaleLPC
+      # NCWL start
       - ClothingHeadHelmetNCWLEVA
       - ClothingOuterNCWLEVA
       - ClothingHeadHatNCWLCapsoft
@@ -683,14 +684,28 @@
       - ClothingEyesGlassesNCWL
       - ClothingMaskNCWLGasmask
       - ClothingBeltNCWLWebbing
+      - ClothingOuterArmorNCWLEngi
+      - ClothingOuterArmorNCWLLogi
+      - ClothingOuterArmorNCWLCarapaceVrachev
+      - ClothingOuterArmorNCWLMedi
+      - ClothingOuterArmorNCWLCarapaceDoktor
+      - ClothingOuterArmorNCWLCarapaceKapitan
+      - ClothingOuterArmorNCWLCarapace
+      - ClothingOuterArmorNCWLOpremeCarapace
+      - ClothingOuterArmorNCWLLightBodyarmor
+      - ClothingOuterArmorNCWLHeavyCarapace
       - ClothingHeadHelmetNCWLBasic
+      - ClothingHeadHelmetNCWLHeavy
       - ClothingHeadHelmetNCWLRiot
       - NCWLRiotShield
       - NCWLLugBaton
       - WeaponRifleFAL
+      - WeaponRifleNCWLRezerv
       - WeaponPistolComrade
       - WeaponSubMachineGunNCWLWatchdog
       - ClothingOuterHardsuitNCWLInfantry
+      - ClothingOuterHardsuitNCWLMedi
+      - ClothingOuterHardsuitNCWLLogi
       - VanguardLPC
       - LodkaLPC
       - MolotLPC
@@ -702,9 +717,13 @@
       - BogatyrLPC
       - SunderLPC
       - WeaponSubMachineGunBloodhound
+      - WeaponSubMachineGunMilitant
       - WeaponRifleNCWLBatanya
+      - WeaponShotgunDoubleBarreledNCWL
       - WeaponShotgunToz123
       - WeaponSniperNCWLNovomosin
+      - WeaponSniperMolot
+      - WeaponLightMachineGunConscript
       - WeaponShotgunProletar
       - WeaponPistolT91
       - WeaponRevolverPython
@@ -715,6 +734,7 @@
       - ClothingOuterHardsuitNCWLJuggernaut
       - NCWLKukri
       - ClothingBeltSheathNCWLKukri
+      # NCWL end
       - ClothingUniformJumpsuitExecutiveShinoharaSuit
       - ClothingUniformJumpsuitShinoharaLogistics
       - ClothingOuterShinoharaVest

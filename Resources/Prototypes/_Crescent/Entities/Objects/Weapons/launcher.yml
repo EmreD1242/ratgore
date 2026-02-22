@@ -34,6 +34,10 @@
     proto: Cartridge40mmFrag
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: ReverseEngineering
+    difficulty: 2
+    recipes:
+      - WeaponLauncherGM94
 
 - type: entity
   name: SHI MGL-6 Milkor 40mm

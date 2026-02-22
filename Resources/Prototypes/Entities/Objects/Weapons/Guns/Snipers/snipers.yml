@@ -316,6 +316,10 @@
     whitelist:
       tags:
       - CartridgeRifle
+  - type: ReverseEngineering # SectorCrescent
+    difficulty: 2
+    recipes:
+      - WeaponSniperNCWLNovomosin
 
 - type: entity
   name: IRM Legax 5.56x45mm

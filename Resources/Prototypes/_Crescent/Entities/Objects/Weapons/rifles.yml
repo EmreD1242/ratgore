@@ -103,6 +103,10 @@
     whitelist:
       tags:
       - CartridgeRifle
+  - type: ReverseEngineering
+    recipes:
+      - WeaponRifleNCWLRezerv
+      - WeaponRifleFAL
 
 - type: entity
   parent: [BaseWeaponSniper, BaseGunWieldable, StreeCredRedeemable]
@@ -400,6 +404,12 @@
   - type: Appearance
   - type: StaticPrice
     price: 2500
+  - type: ReverseEngineering
+    difficulty: 2
+    recipes:
+      - WeaponRifleNCWLBatanya
+      - WeaponRifleFAL
+      - WeaponRifleNCWLRezerv
 
 - type: entity
   name: SHI M55 Goro 7.62x51mm
@@ -631,7 +641,10 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
-
+  - type: ReverseEngineering
+    recipes:
+      - WeaponRifleFAL
+      - WeaponRifleNCWLRezerv
 
 - type: entity
   name: NCSP AKS-74U Krinkov 5.56x45mm

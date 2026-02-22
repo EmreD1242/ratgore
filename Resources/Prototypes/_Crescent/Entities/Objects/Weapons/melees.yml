@@ -405,6 +405,11 @@
     tags:
     - Kukri
   - type: DisarmMalus
+  - type: ReverseEngineering # SectorCrescent
+    difficulty: 4
+    recipes:
+      - NCWLKukri
+      - ClothingBeltSheathNCWLKukri
 
 - type: entity
   name: zweihander

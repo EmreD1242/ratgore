@@ -114,6 +114,9 @@
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
   - type: StaticPrice
     price: 750
+  - type: ReverseEngineering
+    recipes:
+      - WeaponPistolComrade
 
 - type: entity
   name: NT MX-32 Lockwell 9x19mm
@@ -259,6 +262,12 @@
             - CartridgeMagnum
   - type: StaticPrice
     price: 1250
+  - type: ReverseEngineering
+    difficulty: 2
+    recipes:
+      - WeaponPistolT91
+      - WeaponRevolverPython
+      - WeaponPistolComrade
 
 - type: entity
   name: SHI M002 Himehabu 9x19mm

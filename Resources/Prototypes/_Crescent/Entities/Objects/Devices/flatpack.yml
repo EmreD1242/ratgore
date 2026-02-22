@@ -558,6 +558,9 @@
     - state: kit
   - type: StaticPrice
     price: 12000
+    difficulty: 3
+    recipes:
+      - BogatyrFlatpack
 
 - type: entity
   parent: BaseFlatpack
@@ -572,6 +575,9 @@
     - state: kit
   - type: StaticPrice
     price: 12000
+    difficulty: 3
+    recipes:
+      - LancerFlatpack
 
 - type: entity
   parent: BaseFlatpack
