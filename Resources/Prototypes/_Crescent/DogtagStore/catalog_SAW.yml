@@ -219,17 +219,6 @@
   - StoreCategorySAWshipmods
 
 - type: listing
-  id: StoreListingSAWScrapMagnet
-  name: Scrap Magnet
-  description: A great tool, allows a hands free salvage collection.
-  icon: { sprite: /Textures/Structures/Storage/orebox.rsi, state: magnet }
-  productEntity: ScrapMagnetFlatpack
-  cost:
-    ScrapSAW: 10
-  categories:
-  - StoreCategorySAWshipmods
-
-- type: listing
   id: StoreListingSAWHardpointMissileLarge
   name: Salvaged large missile hardpoint
   description: A large missile hardpoint fit for turrets.
