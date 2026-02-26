@@ -8,7 +8,7 @@
   product: Crate20mmAmmo
   cost: 1000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle20mmAmmoGyrostableShinohara
@@ -18,7 +18,7 @@
   product: Crate20mmAmmoGyrostable
   cost: 3000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #35mm Scout
 
@@ -30,7 +30,7 @@
   product: Crate35mmAmmo
   cost: 1250
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle35mmAmmoGyrostableShinohara
@@ -40,7 +40,7 @@
   product: Crate35mmAmmoGyrostable
   cost: 3500
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #48mm Longbow
 
@@ -52,7 +52,7 @@
   product: Crate48mmAmmo
   cost: 4000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #50mm Striker
 
@@ -64,7 +64,7 @@
   product: Crate50mmAmmo
   cost: 1500
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle50mmAmmoPlasmaShinohara
@@ -74,7 +74,7 @@
   product: Crate50mmAmmoPlasma
   cost: 3000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle50mmAmmoGyrostableShinohara
@@ -84,7 +84,7 @@
   product: Crate50mmAmmoGyrostable
   cost: 4500
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #60mm Azimuth
 
@@ -96,7 +96,17 @@
   product: Crate60mmAmmo
   cost: 6000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
+
+- type: cargoProduct
+  id: Shuttle60mmAdvancedAmmoShinohara
+  icon:
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/azimuth.rsi
+    state: azimuthrocket
+  product: Crate60mmAmmoAdvanced
+  cost: 6000
+  category: cargoproduct-category-name-shuttleammo
+  group: shinoharastation
 
 #88m Corpus
 
@@ -108,7 +118,7 @@
   product: Crate88mmAmmo
   cost: 4000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #90mm Resolute
 
@@ -120,7 +130,7 @@
   product: Crate90mmAmmo
   cost: 3000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle90mmAmmoPlasmaShinohara
@@ -130,7 +140,7 @@
   product: Crate90mmAmmoPlasma
   cost: 6000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle90mmAmmoGyrostableShinohara
@@ -140,7 +150,7 @@
   product: Crate90mmAmmoGyrostable
   cost: 9000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #95mm Arbalest
 
@@ -152,7 +162,7 @@
   product: Crate95mmAmmo
   cost: 8000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #120mm Anvil
 
@@ -164,7 +174,7 @@
   product: Crate120mmAmmo
   cost: 3500
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle120mmAmmoPlasmaShinohara
@@ -174,7 +184,7 @@
   product: Crate120mmAmmoPlasma
   cost: 7000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 - type: cargoProduct
   id: Shuttle120mmAmmoGyrostableShinohara
@@ -184,7 +194,7 @@
   product: Crate120mmAmmoGyrostable
   cost: 12000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #240mm Gargoyle
 
@@ -196,7 +206,7 @@
   product: Crate240mmAmmo
   cost: 10000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #300m Leviathan
 
@@ -208,7 +218,7 @@
   product: Crate300mmAmmo
   cost: 8000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #330mm Catapult
 
@@ -220,6 +230,6 @@
   product: Crate330mmAmmo
   cost: 16000
   category: cargoproduct-category-name-shuttleammo
-  group: genericAmmo
+  group: shinoharastation
 
 #Coolant or whatever goes below here
