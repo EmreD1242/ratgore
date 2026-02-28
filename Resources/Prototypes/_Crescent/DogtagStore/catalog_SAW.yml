@@ -381,7 +381,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherRockchipper
   cost:
-    ScrapSAW: 10
+    ScrapSAW: 100
   categories:
   - StoreCategorySAWships
 
@@ -392,7 +392,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherShanty
   cost:
-    ScrapSAW: 15
+    ScrapSAW: 120
   categories:
   - StoreCategorySAWships
 
@@ -403,7 +403,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherMercuryMK2
   cost:
-    ScrapSAW: 15
+    ScrapSAW: 120
   categories:
   - StoreCategorySAWships
 
@@ -414,7 +414,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherScabrak
   cost:
-    ScrapSAW: 30
+    ScrapSAW: 150
   categories:
   - StoreCategorySAWships
 
@@ -425,7 +425,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherThanapod
   cost:
-    ScrapSAW: 30
+    ScrapSAW: 150
   categories:
   - StoreCategorySAWships
 
@@ -436,7 +436,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherHyena
   cost:
-    ScrapSAW: 60
+    ScrapSAW: 170
   categories:
   - StoreCategorySAWships
 
@@ -447,7 +447,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherGeode
   cost:
-    ScrapSAW: 100
+    ScrapSAW: 200
   categories:
   - StoreCategorySAWships
 
@@ -458,7 +458,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherCaracal
   cost:
-    ScrapSAW: 175
+    ScrapSAW: 300
   categories:
   - StoreCategorySAWships
 
@@ -469,7 +469,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherRokh
   cost:
-    ScrapSAW: 370
+    ScrapSAW: 400
   categories:
   - StoreCategorySAWships
 
@@ -480,7 +480,7 @@
   icon: { sprite: _Crescent/Objects/Misc/lpcchip.rsi, state: icon }
   productEntity: ShipVoucherAmadeus
   cost:
-    ScrapSAW: 420
+    ScrapSAW: 500
   categories:
   - StoreCategorySAWships
 
