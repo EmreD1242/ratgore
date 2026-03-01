@@ -2,7 +2,7 @@
   parent: ClothingOuterBase
   id: ClothingOuterCoatImperialRegent
   name: regent uniform
-  description: An ornate coat bedecked in Imperial livery and medals, clearly intended for the Renegt Empire.
+  description: An ornate coat bedecked in Imperial livery and medals, clearly intended for the regent Empire.
   components:
   - type: Sprite
     sprite: _Rat/Clothing/Empire/OuterClothing/regentempire.rsi

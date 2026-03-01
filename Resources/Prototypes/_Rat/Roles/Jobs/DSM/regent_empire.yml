@@ -44,7 +44,7 @@
           - Tradeband
   access:
   - EmergencyShuttleRepealAll
-  - Captain
+  - Captain # Frontier
   - HeadOfPersonnel
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -75,9 +75,7 @@
   - Hydroponics
   - Atmospherics
   - Command
-  - Maintenance
   - Service
-  - External
   - LogisticsWealth
   - ScribesGuild
   - Archmaester
@@ -88,11 +86,8 @@
   - DSMFunds
   - EmpireGovernor
   - EmpireSoldier
-  - Service
   - Empire
-  - External
   - Mercenary # Frontier
-  - Captain # Frontier
 
 - type: startingGear
   id: RegentEmpireGear
