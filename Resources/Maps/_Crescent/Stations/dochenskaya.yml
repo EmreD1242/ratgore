@@ -49594,7 +49594,7 @@ entities:
       pos: 0.5,37.5
       parent: 1
     - type: WarpPoint
-      location: ПК Гидра
+      location: ПК Доченская
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 2990

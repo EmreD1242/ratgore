@@ -15,5 +15,5 @@
           overflowJobs: []
           availableJobs:
             CoordinatorNCSP: [ 1, 1 ]
-            RipperdocNCSP: [ 2, 2 ]
-            TraumasecNCSP: [ 5, 5 ]
+            RipperdocNCSP: [ 3, 3 ]
+            TraumasecNCSP: [ 7, 7 ]
