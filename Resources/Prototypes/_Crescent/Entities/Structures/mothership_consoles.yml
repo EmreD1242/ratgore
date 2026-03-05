@@ -8,9 +8,6 @@
     shuttles:
     - Vanguard
     - Lodka
-    - Ivarod
-    - Stern
-    - Gargut
     - Hind
     - Vasinya
 
@@ -22,6 +19,8 @@
   - type: ShipyardListing
     shuttles:
     - HornetDrone
+    - Rapier
+    - Nova
 
 - type: entity
   id: DSMLightCarrierComputer
@@ -60,8 +59,7 @@
     - Covetor
     - Gnosis
     - Praxis
-    - Laelaps
-    #- Dragoon
+    - Dragoon
 
 - type: entity
   id: NemesisMothershipComputer
