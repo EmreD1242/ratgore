@@ -3,8 +3,9 @@
 
 - type: vessel
   id: Hind
-  name: NCWL Hind |
-    description: A light ore freighter converted into a missile destroyer.
+  name: NCWL Hind
+  description: |
+    A light ore freighter converted into a missile destroyer.
     LOADOUT: 2x 50mm 'Striker' Autocannons, 120mm 'Anvil' Cannon, 4x 60mm 'Azimuth' torpedo system.
     MINIMUM CREW: 1x Pilot, 1x Gunner/Loader
   price: 60000
