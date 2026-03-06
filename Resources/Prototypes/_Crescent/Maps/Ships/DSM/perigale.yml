@@ -2,8 +2,8 @@
   id: Perigale
   name: БМС Перигей
   description: |
-    Имперский сверхлёгкий истребитель, вооружённый двумя давящими гатлингами.
-    LOADOUT: 2x SHI 180c "Torch" Pressure Gatlings
+    Имперский сверхлёгкий истребитель.
+    LOADOUT: 2x 200cc energy gatlings
     MINIMUM CREW: 1x Pilot
   price: 10000
   category: Small

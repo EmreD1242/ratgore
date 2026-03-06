@@ -6,7 +6,9 @@
   name: ТК Сприган
   description: |
     Результат экспериментов инженера ПК с тюнингом, "Сприган" — это мобильный контрабандистско-спасательный корабль, дешевый и легко модифицируемый во что угодно.
-  price: 40000
+    LOADOUT: 2x Exhumer mining guns
+    MINIMUM CREW: 1x Pilot
+  price: 28000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/spriggan.yml
