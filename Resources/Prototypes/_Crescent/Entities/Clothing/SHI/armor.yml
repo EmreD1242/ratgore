@@ -1,5 +1,46 @@
 #hardsuits
 
+- type: entity
+  parent: [ClothingOuterHardsuitBase, StreeCredRedeemable]
+  id: ClothingOuterHardsuitCombine
+  name: SHI-WTI OTA-3 "Combine" combat hardsuit
+  description: A nearly fully durathread combat hardsuit developed by Wu-Tan Industries, lacks protection but makes it up in its durability. Has glow up strips on the shoulders to prevent frendly fire in dark enviroments,
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/OuterClothing/combine.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/OuterClothing/combine.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: DegradeableArmor
+    armorMaxHealth: 1125
+    armorType: Metallic
+    armorRepair: PlasteelPlate
+    initialModifiers:
+      flatReductions:
+        Blunt: 20
+        Slash: 20
+        Piercing: 50
+        Heat: 15
+        Caustic: 15
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCombine
+  - type: ClothingAddFaction
+    faction: SHI
+  - type: ReverseEngineering # TODO
+    difficulty: 3
+    recipes:
+      - ClothingOuterHardsuitHighsec
+      - ClothingOuterHardsuitHighsecUA
+      - ClothingOuterHardsuitHighsecIndependent
+      - ClothingOuterHardsuitHEV
+      - ClothingOuterHardsuitCombine
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -83,7 +124,7 @@
 - type: entity
   parent: ClothingOuterHardsuitHighsec
   id: ClothingOuterHardsuitHighsecUA
-  name: SHI UA SVBT-2 combat hardsuit
+  name: SHI-UA SVBT-2 combat hardsuit
   description: A modular combat hardsuit developed by Shinohara Heavy Industries. Sold to elite mercs and corporate deathsquads everywhere. Customized by the subsidiary group United Arsenal.
   components:
   - type: Sprite
