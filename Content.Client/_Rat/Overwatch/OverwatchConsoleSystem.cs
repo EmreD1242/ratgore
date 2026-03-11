@@ -86,10 +86,11 @@ public sealed class OverwatchConsoleSystem : EntitySystem
 
     private void OnLocalWatchingRemoved(Entity<RatOverwatchWatchingComponent> ent, ref ComponentRemove args)
     {
-        if (_player.LocalEntity != ent.Owner || !ent.Comp.Watching.HasValue)
+        if (_player.LocalEntity != ent.Owner)
             return;
 
-        var watchingNet = GetNetEntity(ent.Comp.Watching.Value);
+        _announcementOverlay.Reset();
+        CleanupAllRelayedSounds();
     }
 
     /// <summary>

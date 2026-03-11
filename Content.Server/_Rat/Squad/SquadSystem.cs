@@ -32,6 +32,9 @@ public sealed class SquadSystem : EntitySystem
     /// </summary>
     public bool CreateSquad(string faction, string squadName)
     {
+        if (string.IsNullOrWhiteSpace(faction) || string.IsNullOrWhiteSpace(squadName))
+            return false;
+
         if (!_squadsByFaction.ContainsKey(faction))
         {
             _squadsByFaction[faction] = new Dictionary<int, SquadInfo>();

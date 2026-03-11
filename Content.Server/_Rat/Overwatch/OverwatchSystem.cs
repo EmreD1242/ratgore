@@ -201,7 +201,7 @@ public sealed class OverwatchSystem : EntitySystem
             if (!_memberDataCache.TryGetValue(member, out var cachedData) ||
                 ShouldRefreshData(member, cachedData))
             {
-                var newData = CreateMemberData(member, availableSquads);
+                var newData = CreateMemberData(member);
                 _memberDataCache[member] = newData;
                 memberData.Add(newData);
             }
@@ -263,7 +263,7 @@ public sealed class OverwatchSystem : EntitySystem
     /// <summary>
     /// Создаёт данные участника для отображения в UI.
     /// </summary>
-    private OverwatchMemberData CreateMemberData(EntityUid member, Dictionary<int, SquadInfo> availableSquads)
+    private OverwatchMemberData CreateMemberData(EntityUid member)
     {
         return new OverwatchMemberData(
             GetNetEntity(member),
@@ -732,19 +732,20 @@ public sealed class OverwatchSystem : EntitySystem
     /// </summary>
     private string GetOverwatchTitle(string faction)
     {
-        return faction switch
+        var key = faction switch
         {
-            "DSM" => "ОКО КАЙЗЕРА",
-            "NCWL" => "ДОЗОРНЫЙ",
-            "SHI" => "C.A.S.S.I.E.",
-            "TAP" => "ЗВЕЗДНЫЙ ШЁПОТ",
-            "TFSC" => "ЧЕРНАЯ СЕТЬ",
-            "IPM" => "ЧЕРНАЯ СЕТЬ",
-            "SAW" => "ЧЕРНАЯ СЕТЬ",
-            "GSC" => "ЧЕРНАЯ СЕТЬ",
-            "CD" => "ЧЕРНАЯ СЕТЬ",
-            _ => "Overwatch"
+            "DSM" => "overwatch-title-dsm",
+            "NCWL" => "overwatch-title-ncwl",
+            "SHI" => "overwatch-title-shi",
+            "TAP" => "overwatch-title-tap",
+            "IPM" => "overwatch-title-ipm",
+            "SAW" => "overwatch-title-saw",
+            "GSC" => "overwatch-title-gsc",
+            "CD" => "overwatch-title-cd",
+            _ => "overwatch-title-default"
         };
+
+        return Loc.GetString(key);
     }
 
     /// <summary>
