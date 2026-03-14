@@ -24,9 +24,6 @@
         - Muted
         - Pacifist
         - WheelchairBound
-    - !type:CharacterPlaytimeRequirement
-      tracker: JobPretorianKnightDSM
-      min: 1
   special:
   - !type:AddComponentSpecial
     components:
