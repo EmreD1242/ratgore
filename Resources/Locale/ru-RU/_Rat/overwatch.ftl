@@ -39,7 +39,7 @@ overwatch-member-status-alive = Жив
 overwatch-member-status-ssd = SSD
 overwatch-member-status-dead = Мёртв
 overwatch-member-status-unknown = Неизвестно
-overwatch-member-coordinates = ({ $x }, { $y })
+overwatch-member-coordinates = ({ $x }; { $y })
 overwatch-member-coordinates-none = —
 
 overwatch-stop-watching-button = Остановить наблюдение
