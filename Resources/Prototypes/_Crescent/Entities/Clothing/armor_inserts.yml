@@ -1,0 +1,148 @@
+- type: entity
+  abstract: true
+  id: ClothingArmorInsert
+  components:
+  - type: ArmorPlateHolder
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      toggleable-clothing: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+# Infantry inserts - First generation
+# Hardened steel
+- type: entity
+  parent: BaseItem
+  id: ArmorPlateSteelInsert
+  name: Steel Insert
+  description: An incredibly basic armor plate, designed to be inserted into a vest or carrier. This one uses a core of hardened steel, adhered to a composite backing. This will withstand several impacts to the same spot, at the cost of minor spalling.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/armorSprites.rsi
+    state: steel
+  - type: Item
+    size: Small
+    shape: 
+    - 0,0,3,3
+  - type: ArmorPlateItem
+    maxDurability: 100
+    walkSpeedMultiplier: 0.8
+    sprintSpeedmultiplier: 0.8
+    staminaDamageMultiplier: 1.5
+    damageMultipliers:
+      Piercing: 0.7
+      Blunt: 0.4
+    absorptionRatios:
+      Piercing: 0.9
+      Blunt: 0.7
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior 
+        sound:
+          path: /Audio/_Crescent/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
+
+# Stabproof Plate
+- type: entity
+  parent: BaseItem
+  id: ArmorPlateKevlarInsert
+  name: Stabproof Insert
+  description: A fairly thin "plate", made out of several dozen layers of aramid fibres. While it is specifically designed to defend against melee weapons, the aramid fibres are able to partially defend against some smaller bullets.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/armorSprites.rsi
+    state: plastic
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,3,3
+  - type: ArmorPlateItem
+    maxDurability: 200
+    walkSpeedMultiplier: 1
+    sprintSpeedmultiplier: 1
+    staminaDamageMultiplier: 0.8
+    absorptionRatios:
+      Piercing: 0.1
+      Blunt: 1
+      Slash: 1
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior 
+        sound:
+          path: /Audio/_Crescent/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
+
+# Basic Ceramic Plate
+- type: entity
+  parent: BaseItem
+  id: ArmorPlateCeramicInsertBasic
+  name: Ceramic Insert
+  description: 
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/armorSprites.rsi
+    state: ceramic
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,3,3
+  - type: ArmorPlateItem
+    maxDurability: 250
+    walkSpeedMultiplier: 1
+    sprintSpeedmultiplier: 1
+    staminaDamageMultiplier: 1
+    damageMultipliers:
+      Piercing: 3
+      Blunt: 3
+    absorptionRatios:
+      Piercing: 1
+      Blunt: 1
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior 
+        sound:
+          path: /Audio/_Crescent/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
