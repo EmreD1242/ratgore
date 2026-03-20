@@ -167,3 +167,10 @@
   completetime: 1
   materials:
     Plastic: 20
+
+- type: latheRecipe
+  id: DrumMagazineShotgunEmpty
+  result: DrumMagazineShotgunEmpty
+  completetime: 1
+  materials:
+    Plastic: 20

@@ -31,7 +31,7 @@
 
 - type: entity
   parent: MaterialBase
-  id: gunpowder
+  id: Gunpowder
   name: gunpowder
   description: A stabilized energetic compound used as propellant in low-yield weapon systems.
   components:
