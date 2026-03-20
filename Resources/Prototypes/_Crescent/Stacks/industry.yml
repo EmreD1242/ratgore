@@ -6,10 +6,10 @@
   maxCount: 50
 
 - type: stack
-  id: Blackpowder
-  name: blackpowder
+  id: gunpowder
+  name: gunpowder
   icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
-  spawn: Blackpowder1
+  spawn: gunpowder1
   maxCount: 50
 
 - type: stack
@@ -20,23 +20,23 @@
   maxCount: 50
 
 - type: stack
-  id: BallisticAlloy
+  id: BallisticSteel
   name: ballistic alloy
   icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ferric }
-  spawn: BallisticAlloy1
+  spawn: BallisticSteel1
   maxCount: 50
 
 - type: stack
-  id: StructuralAlloy
+  id: StructuralComposite
   name: structural alloy
   icon: { sprite: "_Crescent/Objects/Materials/ingots.rsi", state: structural }
-  spawn: StructuralAlloy1
+  spawn: StructuralComposite1
   maxCount: 50
 
 - type: stack
-  id: OrdnanceAlloy
+  id: HeavyOrdnanceSteel
   name: ordnance alloy
   icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ordnance }
-  spawn: OrdnanceAlloy1
+  spawn: HeavyOrdnanceSteel1
   maxCount: 50
 

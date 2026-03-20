@@ -41,14 +41,13 @@ materials-unit-canister = units
 materials-unit-liter = liters
 
 # Industry
-materials-carbon = carbon
-materials-blackpowder = blackpowder
-materials-structuralalloy = structural alloy
-materials-ballisticalloy = ballistics alloy
-materials-ordnancealloy = ordnance alloy
-materials-ordnanceCompound = high-energy explosive compound
-materials-smallcasing = small casings
-materials-mediumcasing = medium casings
-materials-largecasing = large casings
-materials-missilecasing = missile casings
 materials-iron = pig iron
+materials-carbon = carbon
+materials-ordnanceCompound = high-energy explosive compound
+materials-structuralcomposite = structural composite
+materials-ballisticsteel = ballistic steel
+materials-heavyordnancesteel = heavy ordnance steel
+materials-lightgaugecasing = light gauge casings
+materials-mediumgaugecasing = medium gauge casings
+materials-largegaugecasing = large gauge casings
+materials-compositecasing = composite casings

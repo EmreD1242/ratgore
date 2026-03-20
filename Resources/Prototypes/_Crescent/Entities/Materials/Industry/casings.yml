@@ -24,9 +24,9 @@
   - type: Material
 
 - type: entity
-  id: CasingSmallBox
+  id: SmallGaugeCasings
   parent: BaseCasing
-  name: infantry grade casing crate
+  name: small gauge casing crate
   description: A standardized crate of small-arms cartridge casings. Designed to support a wide range of infantry calibers, from sidearms to shotguns. Intended for use in automated ammunition assembly systems.
   suffix: Casings
   components:
@@ -36,12 +36,12 @@
     - state: infantrybox
   - type: PhysicalComposition
     materialComposition:
-      SmallCasing: 100
+      SmallGaugeCasing: 250
 
 - type: entity
-  id: CasingMediumBox
+  id: MediumGaugeCasings
   parent: BaseCasing
-  name: autocannon grade casing crate
+  name: medium gauge casing crate
   description: A standardized crate of autocannon cartridge casings. Designed to support a wide range of autocannon calibers, from rotary cannons to low-calibre artillery. Intended for use in automated ammunition assembly systems.
   suffix: Casings
   components:
@@ -51,12 +51,12 @@
     - state: autocannonbox
   - type: PhysicalComposition
     materialComposition:
-      MediumCasing: 100
+      MediumGaugeCasing: 200
 
 - type: entity
-  id: CasingLargeBox
+  id: LargeGaugeCasings
   parent: BaseCasing
-  name: artillery grade casing crate
+  name: large gauge casing crate
   description: A standardized crate of artillery cartridge casings. Designed to support a wide range of artillery calibers. Intended for use in automated ammunition assembly systems.
   suffix: Casings
   components:
@@ -66,12 +66,12 @@
     - state: artillerybox
   - type: PhysicalComposition
     materialComposition:
-      LargeCasing: 100
+      LargeGaugeCasing: 150
 
 - type: entity
-  id: CasingMissileBox
+  id: CompositeCasing
   parent: BaseCasing
-  name: artillery grade casing crate
+  name: composite casing crate
   description: A standardized crate of missile shell casings. Designed to support a wide range of missile and torpedo calibers, from torpedos to heavy missiles. Intended for use in automated ammunition assembly systems.
   suffix: Casings
   components:
@@ -81,4 +81,4 @@
     - state: missilebox
   - type: PhysicalComposition
     materialComposition:
-      MissileCasing: 100
+      CompositeCasing: 100

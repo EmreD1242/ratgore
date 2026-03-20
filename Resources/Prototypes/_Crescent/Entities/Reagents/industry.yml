@@ -7,8 +7,8 @@
   price: 0
 
 - type: material
-  id: Blackpowder
-  name: materials-blackpowder
+  id: Gunpowder
+  name: materials-gunpowder
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry, state: blackpowder }
   color: "#030000"
@@ -23,56 +23,56 @@
   price: 0
 
 - type: material
-  id: SructuralAlloy
-  name: materials-structuralalloy
+  id: StructuralComposite
+  name: materials-structuralcomposite
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: structural }
   color: "#030000"
   price: 0
 
 - type: material
-  id: BallisticAlloy
-  name: materials-ballisticalloy
+  id: BallisticSteel
+  name: materials-ballisticsteel
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ferric }
   color: "#030000"
   price: 0
 
 - type: material
-  id: OrdnanceAlloy
-  name: materials-ordnancealloy
+  id: HeavyOrdnanceSteel
+  name: materials-heavyordnancesteel
   unit: materials-unit-piece
-  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ordnance }
   color: "#030000"
   price: 0
 
 - type: material
-  id: SmallCasing
-  name: materials-smallcasing
+  id: LightGaugeCasing
+  name: materials-lightgaugecasing
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry, state: infantrybox }
   color: "#ffffff"
   price: 0
 
 - type: material
-  id: MediumCasing
-  name: materials-mediumcasing
+  id: MediumGaugeCasing
+  name: materials-mediumgaugecasing
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry, state: autocannonbox }
   color: "#ffffff"
   price: 0
 
 - type: material
-  id: LargeCasing
-  name: materials-largecasing
+  id: LargeGaugeCasing
+  name: materials-largegaugecasing
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry, state: artillerybox }
   color: "#ffffff"
   price: 0
 
 - type: material
-  id: MissileCasing
-  name: materials-missilecasing
+  id: CompositeCasing
+  name: materials-compositecasing
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry, state: missilebox }
   color: "#ffffff"

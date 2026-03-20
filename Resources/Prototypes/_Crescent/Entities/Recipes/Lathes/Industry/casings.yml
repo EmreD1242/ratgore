@@ -1,20 +1,31 @@
 - type: latheRecipe
-  id: SmallCasings
-  result: CasingSmallBox
-  completetime: 5
+  id: SmallGaugeCasings
+  result: SmallGaugeCasings
+  completetime: 1
   materials:
     Steel: 50
 
 - type: latheRecipe
-  id: MediumCasings
-  result: CasingMediumBox
-  completetime: 5
+  id: MediumGaugeCasings
+  result: MediumGaugeCasings
+  completetime: 4
   materials:
-    SmallCasing: 100
+    Steel: 60
+    AlloyBallistics: 40
 
 - type: latheRecipe
-  id: LargeCasings
-  result: CasingLargeBox
-  completetime: 5
+  id: LargeGaugeCasings
+  result: LargeGaugeCasings
+  completetime: 6
   materials:
-    MediumCasing: 100
+    Steel: 120
+    AlloyStructural: 10
+    AlloyBallistics: 40
+
+- type: latheRecipe
+  id: CompositeCasing
+  result: CompositeCasing
+  completetime: 10
+  materials:
+    AlloyOrdnance: 50
+    Steel: 150

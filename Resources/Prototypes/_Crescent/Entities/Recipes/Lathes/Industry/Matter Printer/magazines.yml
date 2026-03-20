@@ -1,8 +1,8 @@
-# Everyone
+
 - type: latheRecipe
   id: LightRifleMag
   result: MagazineLightRifleEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 30
@@ -10,7 +10,7 @@
 - type: latheRecipe
   id: LightRifleBox
   result: MagazineLightRifleBoxEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 30
@@ -18,7 +18,7 @@
 - type: latheRecipe
   id: RifleMag
   result: MagazineRifleEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 50
@@ -26,7 +26,7 @@
 - type: latheRecipe
   id: RifleDrum
   result: MagazineRifleDrumEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 50
@@ -34,7 +34,7 @@
 - type: latheRecipe
   id: MagazinePistolSubMachineGunEmpty
   result: MagazinePistolSubMachineGunEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 20
@@ -42,7 +42,7 @@
 - type: latheRecipe
   id: MagazinePistolSubMachineGunHeavyEmpty
   result: MagazinePistolSubMachineGunHeavyEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 20
@@ -50,7 +50,7 @@
 - type: latheRecipe
   id: MagazineShotgunEmpty
   result: MagazineShotgunEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -59,7 +59,7 @@
 - type: latheRecipe
   id: MagazinePistolEmpty
   result: MagazinePistolEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 25
@@ -67,7 +67,7 @@
 - type: latheRecipe
   id: MagazinePistolSubMachineGunTopMountedEmpty
   result: MagazinePistolSubMachineGunTopMountedEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 30
@@ -75,7 +75,7 @@
 - type: latheRecipe
   id: MagazineMagnumEmpty
   result: MagazineMagnumEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 30
@@ -83,7 +83,7 @@
 - type: latheRecipe
   id: MagazinePistol6mmSmgEmpty
   result: MagazinePistol6mmSmgEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -91,7 +91,7 @@
 - type: latheRecipe
   id: BaseMagazine6x24mm
   result: BaseMagazine6x24mm
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -99,7 +99,7 @@
 - type: latheRecipe
   id: MagazineRiflePanEmpty
   result: MagazineRiflePanEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -107,7 +107,7 @@
 - type: latheRecipe
   id: MagazineHeavyRifleEmpty
   result: MagazineHeavyRifleEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -115,7 +115,7 @@
 - type: latheRecipe
   id: MagazineHeavyRifleBoxmagEmpty
   result: MagazineHeavyRifleBoxmagEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -123,7 +123,7 @@
 - type: latheRecipe
   id: MagazineMagnumSubEmpty
   result: MagazineMagnumSubEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -131,7 +131,7 @@
 - type: latheRecipe
   id: MagazineAntiMaterielEmpty
   result: MagazineAntiMaterielEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -139,7 +139,7 @@
 - type: latheRecipe
   id: BaseMagazineCaselessRifleEmpty
   result: BaseMagazineCaselessRifleEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -147,7 +147,7 @@
 - type: latheRecipe
   id: SpeedLoaderMagnumEmpty
   result: SpeedLoaderMagnumEmpty
-  category: Ammo
+  category: Magazines
   completetime: 5
   materials:
     Plastic: 50
@@ -155,8 +155,15 @@
 - type: latheRecipe
   id: MagazineRocketEmpty
   result: MagazineRocketEmpty
-  category: Ammo
+  category: Magazines
   completetime: 1
   materials:
     Plastic: 20
 
+- type: latheRecipe
+  id: Magazine90mmEmpty
+  result: Magazine90mmEmpty
+  category: Magazines
+  completetime: 1
+  materials:
+    Plastic: 20

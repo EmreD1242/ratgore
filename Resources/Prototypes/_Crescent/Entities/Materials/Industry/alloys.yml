@@ -1,12 +1,12 @@
 - type: entity
   parent: IngotBase
-  id: BallisticAlloy
-  name: Ferric Composite Alloy
-  description: A carbon-bound iron alloy optimized for mass production.
+  id: BallisticSteel
+  name: ballistic steel alloy
+  description: A copper-bound steel alloy optimized for mass production.
   suffix: 30
   components:
   - type: Stack
-    stackType: BallisticAlloy
+    stackType: BallisticSteel
     baseLayer: base
     layerStates:
     - ferric
@@ -26,12 +26,12 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      BallisticAlloy: 100
+      BallisticSteel: 100
   - type: Appearance
 
 - type: entity
-  id: BallisticAlloy1
-  parent: BallisticAlloy
+  id: BallisticSteel1
+  parent: BallisticSteel
   suffix: Single
   components:
   - type: Stack
@@ -41,13 +41,13 @@
 
 - type: entity
   parent: OreBase
-  id: StructuralAlloy
-  name: Tungsten-Reinforced Structural Alloy
-  description: A sulfur-treated, tungsten-reinforced alloy designed for high-stress hulls and industrial superstructures.
+  id: StructuralComposite
+  name: titanium-reinforced structural composite
+  description: A titanium-reinforced tungsten alloy designed for high-stress hulls and military grade armor.
   suffix: 30
   components:
   - type: Stack
-    stackType: StructuralAlloy
+    stackType: StructuralComposite
     baseLayer: base
     layerStates:
     - structural
@@ -68,12 +68,12 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      StructuralAlloy: 100
+      StructuralComposite: 100
   - type: Appearance
 
 - type: entity
-  id: StructuralAlloy1
-  parent: StructuralAlloy
+  id: StructuralComposite1
+  parent: StructuralComposite
   suffix: Single
   components:
   - type: Stack
@@ -83,13 +83,13 @@
 
 - type: entity
   parent: OreBase
-  id: OrdnanceAlloy
-  name: Plasma-Stabilized Ordnance Alloy
-  description: A sulfur-treated, tungsten-reinforced alloy designed for high-stress hulls and industrial superstructures.
+  id: HeavyOrdnanceSteel
+  name: heavy ordnance steel alloy
+  description: tungsten-reinforced steel alloy designed primarily for high-stress artillery casings
   suffix: 30
   components:
   - type: Stack
-    stackType: OrdnanceAlloy
+    stackType: HeavyOrdnanceSteel
     baseLayer: base
     layerStates:
     - ordnance
@@ -110,12 +110,12 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      OrdnanceAlloy: 100
+      HeavyOrdnanceSteel: 100
   - type: Appearance
 
 - type: entity
-  id: OrdnanceAlloy1
-  parent: OrdnanceAlloy
+  id: HeavyOrdnanceSteel1
+  parent: HeavyOrdnanceSteel
   suffix: Single
   components:
     - type: Stack

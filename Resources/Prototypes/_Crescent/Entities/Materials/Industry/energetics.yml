@@ -31,21 +31,20 @@
 
 - type: entity
   parent: MaterialBase
-  id: Blackpowder
-  name: blackpowder
+  id: gunpowder
+  name: gunpowder
   description: A stabilized energetic compound used as propellant in low-yield weapon systems.
   components:
   - type: Stack
-    stackType: Blackpowder
+    stackType: gunpowder
     count: 30
   - type: Sprite
-    sprite: Objects/Misc/reagent_fillings.rsi
-    state: powderpile
-    color: black
+    sprite: _Crescent/Objects/Industry
+    state: blackpowder
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Blackpowder: 100
+      Gunpowder: 500
   - type: Item
     size: Tiny
   - type: Tag
@@ -53,8 +52,8 @@
     - Energetics
 
 - type: entity
-  id: Blackpowder1
-  parent: Blackpowder
+  id: Gunpowder1
+  parent: gunpowder
   suffix: Single
   components:
     - type: Stack
@@ -63,20 +62,19 @@
 - type: entity
   parent: MaterialBase
   id: OrdnanceCompound
-  name: High-Energy Explosive Compound
+  name: high-energy explosive compound
   description: A stabilized energetic compound used as propellant in high-yield weapon systems.
   components:
   - type: Stack
     stackType: OrdnanceCompound
     count: 30
   - type: Sprite
-    sprite: Objects/Misc/reagent_fillings.rsi
-    state: powderpile
-    color: purple
+    sprite: _Crescent/Objects/Industry
+    state: highexplosive
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      OrdnanceCompound: 100
+      OrdnanceCompound: 250
   - type: Item
     size: Tiny
   - type: Tag

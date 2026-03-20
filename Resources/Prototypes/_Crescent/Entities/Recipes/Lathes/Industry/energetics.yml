@@ -1,6 +1,6 @@
 - type: latheRecipe
-  id: BlackpowderCraft
-  result: Blackpowder1
+  id: GunpowderCraft
+  result: Gunpowder1
   completetime: 2
   materials:
     Carbon: 100

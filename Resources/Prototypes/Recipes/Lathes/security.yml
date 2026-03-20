@@ -489,14 +489,6 @@
     Steel: 300
 
 - type: latheRecipe
-  id: MagazineBoxPistol
-  result: MagazineBoxPistol
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 600
-
-- type: latheRecipe
   id: MagazineBoxPistolRubber
   result: MagazineBoxPistolRubber
   category: Ammo
@@ -512,14 +504,6 @@
   completetime: 5
   materials:
     Steel: 600
-
-- type: latheRecipe
-  id: MagazineBoxMagnum
-  result: MagazineBoxMagnum
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 240
 
 - type: latheRecipe
   id: MagazineBoxMagnumShrapnel
@@ -786,14 +770,6 @@
   completetime: 5
   materials:
     Steel: 900
-
-- type: latheRecipe
-  id: BoxLethalshot
-  result: BoxLethalshot
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 320
 
 - type: latheRecipe
   id: BoxBeanbag
