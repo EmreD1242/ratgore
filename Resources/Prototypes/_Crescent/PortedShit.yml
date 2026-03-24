@@ -426,7 +426,6 @@
         - SmallMobMask  # Frontier
         layer:
         - MachineLayer
-  - type: Dumpable
 
 - type: entity
   id: ScrapMagnet
