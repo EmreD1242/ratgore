@@ -344,8 +344,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHelmetImperialTrooperHelmet
-  name: imperial helmet
-  description: A sturdy helmet to enforce the Kaiserin's will.
+  name: HPS Typ 1 Helmet
+  description: A sturdy ballistic helmet, made of steel and aramid fibre. This one has a white stripe, indicating that the wearer is a commoner.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/mandatehelmet.rsi

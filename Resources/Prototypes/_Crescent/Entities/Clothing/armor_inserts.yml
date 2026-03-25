@@ -203,9 +203,9 @@
 # Advanced ceramic
 - type: entity
   parent: BaseItem
-  id: ArmorPlateCeramicInsertAdvanced
-  name: Boron Carbide Insert
-  description: An advanced armor insert, made of numerous boron carbide tiles, adhered to a polymer backing by a hard glue. Boron carbide allows the same protection as alumina, while also being lighter and more durable. The cost of this durability, is that getting shot will knock you on your ass.
+  id: ArmorPlateCeramicInsertAdvancedHardsuit
+  name: Compact Boron Carbide Insert
+  description: An advanced armor insert, made of numerous boron carbide tiles, adhered to a polymer backing by a hard glue. Boron carbide allows the same protection as alumina, while also being lighter and more durable. The cost of this durability, is that getting shot will knock you on your ass. This one is significantly smaller than the regular ones.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/armorSprites.rsi
